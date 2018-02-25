@@ -39,7 +39,7 @@
         </div>
         <div class="uk-navbar-right">
           <ul class="uk-navbar-nav">
-            <li><a href="login" class="login" v-on:click="makeActive('login')">Login</a></li>
+            <li><a class="login" type="button" uk-toggle="target: #offcanvas-reveal">Login</a></li>
           </ul>
         </div>
       </nav>
@@ -73,6 +73,22 @@
       <br>test<br>test
       <br>test<br>test
       <br>test<br>test
+
+    </div>
+  </div>
+
+  <div id="offcanvas-reveal" uk-offcanvas="mode: push; overlay: true; flip: true">
+    <div class="uk-offcanvas-bar">
+
+      <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+      <h3>Login</h3>
+
+      <p>Username</p>
+      <input class="uk-input" type="text" name="username"/>
+      <p>Password</p>
+      <input class="uk-input" type="password" name="password"/>
+      <button class="uk-button uk-button-secondary uk-align-right" type="submit" name="login" value="Login">Login</button>
 
     </div>
   </div>
