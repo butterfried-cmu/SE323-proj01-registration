@@ -13,7 +13,7 @@
   <script src="js/uikit.js"></script>
   <script src="js/uikit-icons.js"></script>
 
-  <title>Vue.js Navigation Menu</title>
+  <title>Registration</title>
 
 </head>
 <body>
@@ -39,7 +39,7 @@
         </div>
         <div class="uk-navbar-right">
           <ul class="uk-navbar-nav">
-            <li><a href="#" class="login" v-on:click="makeActive('login')">Login</a></li>
+            <li><a class="login" type="button" uk-toggle="target: #offcanvas-reveal">Login</a></li>
           </ul>
         </div>
       </nav>
@@ -47,32 +47,23 @@
 
     <div class="uk-container">
 
-      <p>You chose <b>{{active}}</b></p>
-      <br>test<br>test
-      <br>test<br>test
-      <br>test<br>test
-      <br>test<br>test
-      <br>test<br>test
-      <br>test<br>test
-      <br>test<br>test
-      <br>test<br>test
-      <br>test<br>test
-      <br>test<br>test
-      <br>test<br>test
-      <br>test<br>test
-      <br>test<br>test
-      <br>test<br>test
-      <br>test<br>test
-      <br>test<br>test
-      <br>test<br>test
-      <br>test<br>test
-      <br>test<br>test
-      <br>test<br>test
-      <br>test<br>test
-      <br>test<br>test
-      <br>test<br>test
-      <br>test<br>test
-      <br>test<br>test
+
+
+    </div>
+  </div>
+
+  <div id="offcanvas-reveal" uk-offcanvas="mode: push; overlay: true; flip: true">
+    <div class="uk-offcanvas-bar">
+
+      <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+      <h3>Login</h3>
+
+      <p>Username</p>
+      <input class="uk-input" type="text" name="username"/>
+      <p>Password</p>
+      <input class="uk-input" type="password" name="password"/>
+      <button class="uk-button uk-button-secondary uk-align-right" type="submit" name="login" value="Login">Login</button>
 
     </div>
   </div>
