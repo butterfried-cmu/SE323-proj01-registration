@@ -2,9 +2,19 @@ html{
   background-color: #DDD;
 }
 
+.header{
+  padding: 35px 35px;
+  margin: 0px;
+  background-color: #fff9ff;
+}
+
+.header h3{
+  margin: 0px;
+}
+
 .uk-navbar-container:not(.uk-navbar-transparent) {
   background-color: #533B75;
-  box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
 }
 
 .uk-navbar-nav > li > a {
@@ -12,6 +22,10 @@ html{
   text-transform: uppercase;
   transition: 0.1s ease-in-out;
   transition-property: color, background-color;
+}
+
+.uk-navbar-nav li a{
+  height: 60px;
 }
 
 .uk-navbar-nav > li:hover > a,
@@ -28,14 +42,6 @@ html{
   transition-property: color, background-color;
 }
 
-.uk-card-secondary.header{
-  background-color: #fff9ff;
-}
-
-.uk-card-secondary.header h3{
-  color: #533B75;
-}
-
 .uk-button.uk-button-secondary{
   margin-top: 20px;
   color: #fff;
@@ -44,6 +50,16 @@ html{
 
 .uk-offcanvas-bar {
   background-color: #533B75;
+}
+
+.content.box{
+  background-color: #ffffff;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.uk-icon{
+  padding-left: 2px;
 }
 
 .uk-light .uk-input:focus,
