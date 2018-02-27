@@ -13,7 +13,8 @@
   <script src="js/uikit.js"></script>
   <script src="js/uikit-icons.js"></script>
 
-  <title>GPA</title>
+  <title>GPA Result</title>
+
 </head>
 <body>
 
@@ -31,13 +32,13 @@
       <nav v-bind:class="active" class="uk-navbar-container" uk-navbar uk-sticky="bottom: #offset; show-on-up: true; animation: uk-animation-slide-top;">
         <div class="uk-navbar-left">
           <ul class="uk-navbar-nav">
-            <li><a href="index.html" class="home"><span class="uk-icon" uk-icon="icon: home"></span>Home</a></li>
-            <li><a href="courses.html" class="courses">Courses</a></li>
+            <li><a href="/" class="home"><span class="uk-icon" uk-icon="icon: home"></span>Home</a></li>
+            <li><a href="courses  " class="home">Courses</a></li>
           </ul>
         </div>
         <div class="uk-navbar-right">
           <ul class="uk-navbar-nav">
-            <li><a href="index.html"><span class="uk-icon" uk-icon="icon: sign-out"></span>Logout</a></li>
+            <li><a class="login" type="button" uk-toggle="target: #offcanvas-slide"><span class="uk-icon" uk-icon="icon: sign-in"></span>Login</a></li>
           </ul>
         </div>
       </nav>
@@ -45,23 +46,82 @@
 
     <div class="uk-container">
       <div class="content box">
+        <form>
+          <fieldset class="uk-fieldset">
 
-        <div class="uk-article-title">
-          <!-- <h2 class="uk-heading-divider"><span></span></h2> -->
-        </div>
+            <legend class="uk-legend">GPA Result</legend>
+              <div class="uk-margin">
+                <p>Name : Momonka Sama</p>
 
-        <div class="uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center" uk-grid>
-          <div>
-            <a href="courses.html" class="uk-link-text"><div class="uk-card uk-card-default uk-card-hover uk-card-body">Search Courses</div></a>
-          </div>
-          <div>
-            <div class="uk-card uk-card-default uk-card-hover uk-card-body">Item</div>
-          </div>
-          <div>
-            <div class="uk-card uk-card-default uk-card-hover uk-card-body">Item</div>
-          </div>
-        </div>
-      </div>
+              </div>
+              <table style="width: 100%">
+                <thead>
+                  <tr>
+                    <th align="left">Course</th>
+                    <th>Credits</th>
+                    <th>GPA</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>001223 - ENGL FOR HUMAN & MASSCOM</td>
+                    <td align="center">3 credits</td>
+                    <td align="center">A</td>
+                  </tr>
+                  <tr>
+                    <td>951100 - MODERN LIFE AND ANIMATION </td>
+                    <td align="center">3 credits</td>
+                    <td align="center">A</td>
+                  </tr>
+                  <tr>
+                    <td>953323 - SOFWARE CONS TEST&MAINT </td>
+                    <td align="center">3 credits</td>
+                    <td align="center">A</td>
+                  </tr>
+                  <tr>
+                    <td>953411 - AI FOR SE </td>
+                    <td align="center">3 credits</td>
+                    <td align="center">A</td>
+                  </tr>
+                  <tr>
+                    <td>953422 - SOFTWARE QUALITY ASSURANCE </td>
+                    <td align="center">3 credits</td>
+                    <td align="center">A</td>
+                  </tr>
+
+                </tbody>
+
+                <tfoot>
+                  <tr>
+                    <th align="right">Total Credits</th>
+                      <td align="center">15</td>
+                    <th align="left">GPAX</th>
+                      <td align="center">4.00</td>
+                  </tr>
+                </tfoot>
+              </table>
+
+            <div id="offcanvas-slide" uk-offcanvas="overlay: true; flip: true">
+              <div class="uk-offcanvas-bar">
+
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                <h3>Login</h3>
+
+                <p>Username</p>
+                <input class="uk-input" type="text" name="username"/>
+                <p>Password</p>
+                <input class="uk-input" type="password" name="password"/>
+                <button class="uk-button uk-button-secondary uk-align-right" type="submit" name="login" value="Login">Login</button>
+
+              </div>
+            </div>
+          </fieldset>
+        </form>
     </div>
+
+    <!-- UIkit JS -->
+    <script src="{{ asset('js/uikit.min.js') }}"></script>
+    <script src="{{ asset('js/uikit-icons.min.js') }}"></script>
   </body>
   </html>
