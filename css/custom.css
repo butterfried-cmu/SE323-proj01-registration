@@ -62,6 +62,10 @@ html{
   padding-left: 2px;
 }
 
+.uk-card.uk-card-default.uk-card-body{
+  background-color: #ffffff;
+}
+
 .uk-light .uk-input:focus,
 .uk-light .uk-select:focus,
 .uk-light .uk-textarea:focus,
