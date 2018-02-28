@@ -1,78 +1,77 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- UIkit CSS -->
-  <link href="css/uikit.css" rel="stylesheet" />
-  <link href="css/custom.css" rel="stylesheet" />
+        <!-- UIkit CSS -->
+        <link href="css/uikit.css" rel="stylesheet" />
+        <link href="css/custom.css" rel="stylesheet" />
 
-  <!-- UIkit JS -->
-  <script src="js/uikit.js"></script>
-  <script src="js/uikit-icons.js"></script>
+        <!-- UIkit JS -->
+        <script src="js/uikit.js"></script>
+        <script src="js/uikit-icons.js"></script>
 
-  <title>Teacher</title>
+        <title>Teacher</title>
 
-</head>
-<body>
+    </head>
+    <body>
 
-  <div id="main">
+        <div id="main">
 
-    <!-- The navigation menu will get the value of the "active" variable as a class. -->
-    <!-- To stops the page from jumping when a link is clicked we use the "prevent" modifier (short for preventDefault). -->
+            <!-- The navigation menu will get the value of the "active" variable as a class. -->
+            <!-- To stops the page from jumping when a link is clicked we use the "prevent" modifier (short for preventDefault). -->
 
-    <div class="container">
-      <div class="header">
-        <h3>Registration System</h3>
-      </div>
+            <div class="container">
+                <div class="header">
+                    <h3>Registration System</h3>
+                </div>
 
-      <nav v-bind:class="active" class="uk-navbar-container" uk-navbar uk-sticky="bottom: #offset; show-on-up: true; animation: uk-animation-slide-top;">
-        <div class="uk-navbar-left">
-          <ul class="uk-navbar-nav">
-            <li><a href="index.html" class="home"><span class="uk-icon" uk-icon="icon: home"></span>Home</a></li>
-            <li><a href="courses.html" class="courses">Courses</a></li>
-          </ul>
-        </div>
-        <div class="uk-navbar-right">
-          <ul class="uk-navbar-nav">
-            <li><a href="index.html"><span class="uk-icon" uk-icon="icon: sign-out"></span>Logout</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-
-    <div class="uk-container">
-      <div class="content box">
-
-        <div class="uk-article-title">
-          <!-- <h2 class="uk-heading-divider"><span></span></h2> -->
-        </div>
-
-        <div class="uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center" uk-grid>
-          <div>
-            <a href="courses.html" class="uk-link-text"><div class="uk-card uk-card-default uk-card-hover uk-card-body">Search Courses</div></a>
-          </div>
-          <div>
-            <div class="uk-card uk-card-default uk-card-hover uk-card-body">Item</div>
-          </div>
-          <div>
-            <div class="uk-card uk-card-default uk-card-hover uk-card-body">Item</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="content box">
-        <ul uk-accordion>
-          <li>
-            <a class="uk-accordion-title" href="#">Time table</a>
-            <div class="uk-accordion-content">
-              <p>Time table here</p>
+                <nav v-bind:class="active" class="uk-navbar-container" uk-navbar uk-sticky="bottom: #offset; show-on-up: true; animation: uk-animation-slide-top;">
+                    <div class="uk-navbar-left">
+                        <ul class="uk-navbar-nav">
+                            <li><a href="index.html" class="home"><span class="uk-icon" uk-icon="icon: home"></span>Home</a></li>
+                            <li><a href="courses.html" class="courses">Courses</a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav">
+                            <li><a href="index.html"><span class="uk-icon" uk-icon="icon: sign-out"></span>Logout</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </body>
-  </html>
+
+            <div class="uk-container">
+                <div class="content box">
+
+                    <div class="uk-article-title">
+                        <!-- <h2 class="uk-heading-divider"><span></span></h2> -->
+                    </div>
+
+                    <div class="uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center" uk-grid>
+                        <div>
+                            <a href="courses.html" class="uk-link-text"><div class="uk-card uk-card-default uk-card-hover uk-card-body">Search Courses</div></a>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-hover uk-card-body">Item</div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-hover uk-card-body">Item</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content box">
+                    <ul uk-accordion>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Time table</a>
+                            <div class="uk-accordion-content">
+                                <p>Time table here</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </body>
+        </html>

@@ -1,73 +1,83 @@
 html{
-  background-color: #DDD;
+    background-color: #DDD;
 }
 
 .header{
-  padding: 35px 35px;
-  margin: 0px;
-  background-color: #fff9ff;
+    padding: 35px 35px;
+    margin: 0px;
+    background-color: #fff9ff;
 }
 
 .header h3{
-  margin: 0px;
+    margin: 0px;
+}
+
+.image-round-square{
+    border-radius: 30%;
 }
 
 .uk-navbar-container:not(.uk-navbar-transparent) {
-  background-color: #533B75;
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    background-color: #533B75;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
 }
 
 .uk-navbar-nav > li > a {
-  color: #FFF;
-  text-transform: uppercase;
-  transition: 0.1s ease-in-out;
-  transition-property: color, background-color;
+    color: #FFF;
+    text-transform: uppercase;
+    transition: 0.1s ease-in-out;
+    transition-property: color, background-color;
 }
 
 .uk-navbar-nav li a{
-  height: 60px;
+    height: 60px;
 }
 
 .uk-navbar-nav > li:hover > a,
 .uk-navbar-nav > li > a.uk-open {
-  color: #FFF;
-  outline: none;
-  background-color: #b053b2;
+    color: #FFF;
+    outline: none;
+    background-color: #b053b2;
 }
 
 .uk-navbar-nav > li > a:focus{
-  color: #FFF;
-  text-transform: uppercase;
-  transition: 0.1s ease-in-out;
-  transition-property: color, background-color;
+    color: #FFF;
+    text-transform: uppercase;
+    transition: 0.1s ease-in-out;
+    transition-property: color, background-color;
 }
 
 .uk-accordion-title:hover{
-  background-color: #f5f5f5;
+    background-color: #f5f5f5;
 }
 
 .uk-button.uk-button-secondary{
-  margin-top: 20px;
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.1);;
+    margin-top: 20px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);;
 }
 
 .uk-offcanvas-bar {
-  background-color: #533B75;
+    background-color: #533B75;
 }
 
 .content.box{
-  background-color: #ffffff;
-  margin-top: 20px;
-  padding: 20px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    padding: 20px;
 }
 
 .uk-icon{
-  padding-left: 2px;
+    padding-left: 2px;
 }
 
 .uk-card.uk-card-default.uk-card-body{
-  background-color: #ffffff;
+    background-color: #ffffff;
+}
+
+.align-center{
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
 }
 
 .uk-light .uk-input:focus,
@@ -103,9 +113,9 @@ html{
 .uk-offcanvas-bar .uk-input:focus,
 .uk-offcanvas-bar .uk-select:focus,
 .uk-offcanvas-bar .uk-textarea:focus {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.7);
-  border-color: rgba(176, 83, 178, 0.7);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    border-color: rgba(176, 83, 178, 0.7);
 }
 
 .uk-light .uk-button-default:hover,
@@ -130,7 +140,33 @@ html{
 .uk-overlay-primary .uk-button-default:focus,
 .uk-offcanvas-bar .uk-button-default:hover,
 .uk-offcanvas-bar .uk-button-default:focus {
-  background-color: transparent;
-  color: rgba(176, 83, 178, 0.7);
-  border-color: rgba(176, 83, 178, 0.7);
+    background-color: transparent;
+    color: rgba(176, 83, 178, 0.7);
+    border-color: rgba(176, 83, 178, 0.7);
+}
+
+@media screen and (max-width: 640px) {
+    img {
+        width: 40%;
+
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    img {
+        width: 55%;
+
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle
+
+    }
 }

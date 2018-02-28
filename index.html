@@ -1,82 +1,83 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- UIkit CSS -->
-  <link href="css/uikit.css" rel="stylesheet" />
-  <link href="css/custom.css" rel="stylesheet" />
+        <!-- UIkit CSS -->
+        <link href="css/uikit.css" rel="stylesheet" />
+        <link href="css/custom.css" rel="stylesheet" />
 
-  <!-- UIkit JS -->
-  <script src="js/uikit.js"></script>
-  <script src="js/uikit-icons.js"></script>
+        <!-- UIkit JS -->
+        <script src="js/uikit.js"></script>
+        <script src="js/uikit-icons.js"></script>
 
-  <title>Registration</title>
-</head>
-<body>
+        <title>Registration</title>
+    </head>
+    <body>
 
-  <div id="main">
+        <div id="main">
 
-    <!-- The navigation menu will get the value of the "active" variable as a class. -->
-    <!-- To stops the page from jumping when a link is clicked we use the "prevent" modifier (short for preventDefault). -->
+            <!-- The navigation menu will get the value of the "active" variable as a class. -->
+            <!-- To stops the page from jumping when a link is clicked we use the "prevent" modifier (short for preventDefault). -->
 
-    <div class="container">
+            <div class="container">
 
-      <div class="header">
-        <h3>Registration System</h3>
-      </div>
+                <div class="header">
+                    <h3>Registration System</h3>
+                </div>
 
-      <nav v-bind:class="active" class="uk-navbar-container" uk-navbar uk-sticky="bottom: #offset; show-on-up: true; animation: uk-animation-slide-top;">
-        <div class="uk-navbar-left">
-          <ul class="uk-navbar-nav">
-            <li><a href="index.html" class="home"><span class="uk-icon" uk-icon="icon: home"></span>Home</a></li>
-            <li><a href="courses.html" class="courses">Courses</a></li>
-          </ul>
+                <nav v-bind:class="active" class="uk-navbar-container" uk-navbar uk-sticky="bottom: #offset; show-on-up: true; animation: uk-animation-slide-top;">
+                    <div class="uk-navbar-left">
+                        <ul class="uk-navbar-nav">
+                            <li><a href="index.html" class="home"><span class="uk-icon" uk-icon="icon: home"></span>Home</a></li>
+                            <li><a href="courses.html" class="courses">Courses</a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav">
+                            <li><a class="login" type="button" uk-toggle="target: #offcanvas-slide"><span class="uk-icon" uk-icon="icon: sign-in"></span>Login</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="uk-container">
+                <div class="content box">
+
+                    <div class="uk-article-title">
+                        <!-- <h2 class="uk-heading-divider"><span></span></h2> -->
+                    </div>
+
+                    <div class="uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center" uk-grid>
+                        <div>
+                            <a href="courses.html" class="uk-link-text"><div class="uk-card uk-card-default uk-card-hover uk-card-body">Search Courses</div></a>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-hover uk-card-body">Item</div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-hover uk-card-body">Item</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="offcanvas-slide" uk-offcanvas="overlay: true; flip: true">
+                    <div class="uk-offcanvas-bar">
+                        <button class="uk-offcanvas-close" type="button" uk-close></button>
+                        <h3>Login</h3>
+                        <p>Username</p>
+                        <input class="uk-input" type="text" name="username"/>
+                        <p>Password</p>
+                        <input class="uk-input" type="password" name="password"/>
+                        <button class="uk-button uk-button-secondary uk-align-right" type="submit" name="login" value="Login">Login</button>
+                        <a class="uk-link-text" href="index_s.html">login as student</a>
+                        <a class="uk-link-text" href="index_t.html">login as teacher</a>
+                        <a class="uk-link-text" href="index_a.html">login as admin</a>
+                    </div>
+                </div>
         </div>
-        <div class="uk-navbar-right">
-          <ul class="uk-navbar-nav">
-            <li><a class="login" type="button" uk-toggle="target: #offcanvas-slide"><span class="uk-icon" uk-icon="icon: sign-in"></span>Login</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-
-    <div class="uk-container">
-      <div class="content box">
-
-        <div class="uk-article-title">
-          <!-- <h2 class="uk-heading-divider"><span></span></h2> -->
-        </div>
-
-        <div class="uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center" uk-grid>
-          <div>
-            <a href="courses.html" class="uk-link-text"><div class="uk-card uk-card-default uk-card-hover uk-card-body">Search Courses</div></a>
-          </div>
-          <div>
-            <div class="uk-card uk-card-default uk-card-hover uk-card-body">Item</div>
-          </div>
-          <div>
-            <div class="uk-card uk-card-default uk-card-hover uk-card-body">Item</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="offcanvas-slide" uk-offcanvas="overlay: true; flip: true">
-        <div class="uk-offcanvas-bar">
-          <button class="uk-offcanvas-close" type="button" uk-close></button>
-          <h3>Login</h3>
-          <p>Username</p>
-          <input class="uk-input" type="text" name="username"/>
-          <p>Password</p>
-          <input class="uk-input" type="password" name="password"/>
-          <button class="uk-button uk-button-secondary uk-align-right" type="submit" name="login" value="Login">Login</button>
-          <a class="uk-link-text" href="index_s.html">login as student</a>
-          <a class="uk-link-text" href="index_t.html">login as teacher</a>
-          <a class="uk-link-text" href="index_a.html">login as admin</a>
-        </div>
-      </div>
-    </div>
-  </body>
-  </html>
+    </body>
+</html>
