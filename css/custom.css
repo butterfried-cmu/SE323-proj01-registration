@@ -1,5 +1,26 @@
-html{
+html, body{
     background-color: #DDD;
+    height: 100%;
+    margin: 0px;
+}
+
+.container {
+    min-height: 100%;
+
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -150px;
+}
+
+.push{
+    height: 150px;
+}
+
+footer{
+    color: #ffffff;
+    height: 120px;
+    margin-top: 30px;
+    background-color: #533B75;
 }
 
 .header{

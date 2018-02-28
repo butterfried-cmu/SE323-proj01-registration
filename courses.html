@@ -17,32 +17,25 @@
 
     </head>
     <body>
+        <div class="container">
 
-        <div id="main">
-
-            <!-- The navigation menu will get the value of the "active" variable as a class. -->
-            <!-- To stops the page from jumping when a link is clicked we use the "prevent" modifier (short for preventDefault). -->
-
-            <div class="container">
-
-                <div class="header">
-                    <h3>Registration System</h3>
-                </div>
-
-                <nav v-bind:class="active" class="uk-navbar-container" uk-navbar uk-sticky="bottom: #offset; show-on-up: true; animation: uk-animation-slide-top;">
-                    <div class="uk-navbar-left">
-                        <ul class="uk-navbar-nav">
-                            <li><a href="index.html" class="home"><span class="uk-icon" uk-icon="icon: home"></span>Home</a></li>
-                            <li><a href="courses.html" class="home">Courses</a></li>
-                        </ul>
-                    </div>
-                    <div class="uk-navbar-right">
-                        <ul class="uk-navbar-nav">
-                            <li><a href="index.html"><span class="uk-icon" uk-icon="icon: sign-out"></span>Logout</a></li>
-                        </ul>
-                    </div>
-                </nav>
+            <div class="header">
+                <h3>Registration System</h3>
             </div>
+
+            <nav v-bind:class="active" class="uk-navbar-container" uk-navbar uk-sticky="bottom: #offset; show-on-up: true; animation: uk-animation-slide-top;">
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="index.html" class="home"><span class="uk-icon" uk-icon="icon: home"></span>Home</a></li>
+                        <li><a href="courses.html" class="home">Courses</a></li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="index.html"><span class="uk-icon" uk-icon="icon: sign-out"></span>Logout</a></li>
+                    </ul>
+                </div>
+            </nav>
 
             <div class="uk-container">
 
@@ -91,6 +84,10 @@
                     </ul>
                 </div>
             </div>
+            <div class="push"></div>
         </div>
+        <footer>
+            footer
+        </footer>
     </body>
 </html>
