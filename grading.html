@@ -1,0 +1,279 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- UIkit CSS -->
+        <link href="css/uikit.css" rel="stylesheet" />
+        <link href="css/custom.css" rel="stylesheet" />
+
+        <!-- UIkit JS -->
+        <script src="js/uikit.js"></script>
+        <script src="js/uikit-icons.js"></script>
+
+        <title>Teacher</title>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h3>Registration System</h3>
+            </div>
+
+            <nav v-bind:class="active" class="uk-navbar-container" uk-navbar uk-sticky="bottom: #offset; show-on-up: true; animation: uk-animation-slide-top;">
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="index.html" class="home"><span class="uk-icon" uk-icon="icon: home"></span>Home</a></li>
+                        <li><a href="courses.html" class="courses">Courses</a></li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="index.html"><span class="uk-icon" uk-icon="icon: sign-out"></span>Logout</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="uk-container">
+                <div class="content box">
+                    <div class="uk-article-title">
+                        <h2 class="uk-heading-divider">Teacher information</h2>
+                    </div>
+
+                    <div class="uk-article" uk-grid>
+                        <div class="uk-width-auto align-center" uk-grid>
+                            <div class="uk-width-2-6@m uk-width-1-3@s">
+                                <img class="image-user image-round-square" src="image/woman.png" alt="student name">
+                            </div>
+                            <div class="uk-width-4-6@m uk-width-2-3@s">
+                                <div class="uk-overflow-auto">
+                                    <table class="uk-table uk-table-divider">
+                                        <tbody>
+                                            <tr>
+                                                <td><b>Personnel ID</b></td>
+                                                <td>12123</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Full name</b></td>
+                                                <td>Intira Wattana</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Faculty</b></td>
+                                                <td>College of Arts, Media and Technology</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Department</b></td>
+                                                <td>Software Engineering</td>
+                                            </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-container">
+                <div class="content box">
+                    <ul uk-accordion>
+                        <li class="uk-open">
+                            <a class="uk-accordion-title" href="#">Student List</a>
+                            <div class="uk-accordion-content">
+                                <div class="uk-overflow-auto">
+                                    <table class="uk-table uk-table-justify uk-table-divider uk-table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th class="uk-width-auto uk-table-middle uk-text-center" rowspan="2">#</th>
+                                                <th class="uk-width-auto uk-table-middle uk-text-center" rowspan="2">ID</th>
+                                                <th class="uk-width-1-3 uk-table-middle uk-text-center" rowspan="2">Student Name</th>
+
+                                                <th class="uk-width-auto uk-table-middle uk-text-center" rowspan="2">Grading</th>
+                                            </tr>
+
+                                          </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="uk-text-center">1</td>
+                                                <td class="uk-text-center">582115000</td>
+                                                <td class="uk-text-center">Sir Abe</td>
+
+                                                <td class="uk-text-center"><form>  <div class="uk-margin">
+
+                                                    <div uk-form-custom="target: > * > span:first-child" >
+                                                        <select>
+                                                            <option value="">W</option>
+                                                            <option value="1">A</option>
+                                                            <option value="2">B+</option>
+                                                            <option value="3">B</option>
+                                                            <option value="4">C+</option>
+                                                            <option value="5">C</option>
+                                                            <option value="6">D+</option>
+                                                            <option value="7">D</option>
+                                                            <option value="8">F</option>
+                                                            <option value="9">S</option>
+                                                            <option value="10">I</option>
+
+
+                                                        </select>
+                                                        <button class="uk-button uk-button-primary" type="button" tabindex="-1">
+                                                            <span></span>
+                                                            <span uk-icon="icon: chevron-down"></span>
+                                                        </button>
+                                                    </div>
+                                                </div></form></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="uk-text-center">2</td>
+                                                <td class="uk-text-center">582115555</td>
+                                                <td class="uk-text-center">Tew Trooper</td>
+
+                                                <td class="uk-text-center"><form>  <div class="uk-margin">
+
+                                                    <div uk-form-custom="target: > * > span:first-child" >
+                                                        <select>
+                                                            <option value="">W</option>
+                                                            <option value="1">A</option>
+                                                            <option value="2">B+</option>
+                                                            <option value="3">B</option>
+                                                            <option value="4">C+</option>
+                                                            <option value="5">C</option>
+                                                            <option value="6">D+</option>
+                                                            <option value="7">D</option>
+                                                            <option value="8">F</option>
+                                                            <option value="9">S</option>
+                                                            <option value="10">I</option>
+
+
+                                                        </select>
+                                                        <button class="uk-button uk-button-primary" type="button" tabindex="-1">
+                                                            <span></span>
+                                                            <span uk-icon="icon: chevron-down"></span>
+                                                        </button>
+                                                    </div>
+                                                </div></form></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="uk-text-center">3</td>
+                                                <td class="uk-text-center">582115678</td>
+                                                <td class="uk-text-center">Cossbender Ana</td>
+
+                                                <td class="uk-text-center"><form>  <div class="uk-margin">
+
+                                                    <div uk-form-custom="target: > * > span:first-child" >
+                                                        <select>
+                                                            <option value="">W</option>
+                                                            <option value="1">A</option>
+                                                            <option value="2">B+</option>
+                                                            <option value="3">B</option>
+                                                            <option value="4">C+</option>
+                                                            <option value="5">C</option>
+                                                            <option value="6">D+</option>
+                                                            <option value="7">D</option>
+                                                            <option value="8">F</option>
+                                                            <option value="9">S</option>
+                                                            <option value="10">I</option>
+
+
+                                                        </select>
+                                                        <button class="uk-button uk-button-primary" type="button" tabindex="-1">
+                                                            <span></span>
+                                                            <span uk-icon="icon: chevron-down"></span>
+                                                        </button>
+                                                    </div>
+                                                </div></form></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="uk-text-center">4</td>
+                                                <td class="uk-text-center">582115432</td>
+                                                <td class="uk-text-center">Acbm Psuedo</td>
+
+                                                <td class="uk-text-center"><form>  <div class="uk-margin">
+
+                                                    <div uk-form-custom="target: > * > span:first-child" >
+                                                        <select>
+                                                            <option value="">W</option>
+                                                            <option value="1">A</option>
+                                                            <option value="2">B+</option>
+                                                            <option value="3">B</option>
+                                                            <option value="4">C+</option>
+                                                            <option value="5">C</option>
+                                                            <option value="6">D+</option>
+                                                            <option value="7">D</option>
+                                                            <option value="8">F</option>
+                                                            <option value="9">S</option>
+                                                            <option value="10">I</option>
+
+
+                                                        </select>
+                                                        <button class="uk-button uk-button-primary" type="button" tabindex="-1">
+                                                            <span></span>
+                                                            <span uk-icon="icon: chevron-down"></span>
+                                                        </button>
+                                                    </div>
+                                                </div></form></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="uk-text-center">5</td>
+                                                <td class="uk-text-center">582115577</td>
+                                                <td class="uk-text-center">Porring Eiei</td>
+
+                                                <td class="uk-text-center"><form>  <div class="uk-margin">
+
+                                                    <div uk-form-custom="target: > * > span:first-child" >
+                                                        <select>
+                                                            <option value="">W</option>
+                                                            <option value="1">A</option>
+                                                            <option value="2">B+</option>
+                                                            <option value="3">B</option>
+                                                            <option value="4">C+</option>
+                                                            <option value="5">C</option>
+                                                            <option value="6">D+</option>
+                                                            <option value="7">D</option>
+                                                            <option value="8">F</option>
+                                                            <option value="9">S</option>
+                                                            <option value="10">I</option>
+
+
+                                                        </select>
+                                                        <button class="uk-button uk-button-primary" type="button" tabindex="-1">
+                                                            <span></span>
+                                                            <span uk-icon="icon: chevron-down"></span>
+                                                        </button>
+                                                    </div>
+                                                </div></form></td>
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content box">
+                    <ul uk-accordion>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Time table</a>
+                            <div class="uk-accordion-content">
+                                <p>Time table here</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="push"></div>
+        </div>
+        <footer class="uk-text-center">
+            <h3>This is footer</h3>
+            Registration Office - BNK University
+        </footer>
+    </body>
+</html>
