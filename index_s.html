@@ -35,7 +35,7 @@
                     </ul>
                 </div>
             </nav>
-            
+
             <div class="uk-container">
                 <div class="content box">
                     <div class="uk-article-title">
@@ -97,6 +97,7 @@
                                                 <th class="uk-width-auto uk-table-middle uk-text-center" colspan="2">Credit</th>
                                                 <th class="uk-width-auto uk-table-middle uk-text-center" rowspan="2">Day</th>
                                                 <th class="uk-width-auto uk-table-middle uk-text-center" rowspan="2">Time</th>
+                                                  <th class="uk-width-auto uk-table-middle uk-text-center" rowspan="2">Type</th>
 
                                                 <th class="uk-width-auto uk-table-middle uk-text-center" rowspan="2">Remove Courses</th>
                                             </tr>
@@ -115,6 +116,7 @@
                                                 <td class="uk-text-center">1</td>
                                                 <td class="uk-text-center">Tuesday</td>
                                                 <td class="uk-text-center">12.30 - 14.30</td>
+                                                <td class="uk-text-center">p</td>
                                                 <td class="uk-text-center"><button class="uk-button uk-button-danger" type="button">Remove</button></td>
                                             </tr>
 
@@ -127,6 +129,7 @@
                                                 <td class="uk-text-center">0</td>
                                                 <td class="uk-text-center">Wednesday</td>
                                                 <td class="uk-text-center">12.30 - 15.30</td>
+                                                <td class="uk-text-center">p</td>
                                                 <td class="uk-text-center"><button class="uk-button uk-button-danger" type="button">Remove</button></td>
                                             </tr>
 
@@ -139,6 +142,7 @@
                                                 <td class="uk-text-center">0</td>
                                                 <td class="uk-text-center">Tuesday</td>
                                                 <td class="uk-text-center">9.30 - 12.30</td>
+                                                <td class="uk-text-center">p</td>
                                                 <td class="uk-text-center"><button class="uk-button uk-button-danger" type="button">Remove</button></td>
                                             </tr>
 
@@ -151,6 +155,7 @@
                                                 <td class="uk-text-center">1</td>
                                                 <td class="uk-text-center">TBA</td>
                                                 <td class="uk-text-center">00.00 - 00.00</td>
+                                                <td class="uk-text-center">p</td>
                                                 <td class="uk-text-center"><button class="uk-button uk-button-danger" type="button">Remove</button></td>
                                             </tr>
 
@@ -163,6 +168,7 @@
                                                 <td class="uk-text-center">0</td>
                                                 <td class="uk-text-center">Friday</td>
                                                 <td class="uk-text-center">9.30 - 12.30</td>
+                                                <td class="uk-text-center">p</td>
                                                 <td class="uk-text-center"><button class="uk-button uk-button-danger" type="button">Remove</button></td>
                                             </tr>
 
@@ -175,6 +181,7 @@
                                                 <td class="uk-text-center">0</td>
                                                 <td class="uk-text-center">Tuesday</td>
                                                 <td class="uk-text-center">14.30 - 17.30</td>
+                                                <td class="uk-text-center">p</td>
                                                 <td class="uk-text-center"><button class="uk-button uk-button-danger" type="button">Remove</button></td>
                                             </tr>
                                         </tbody>
@@ -184,45 +191,63 @@
                                 <div class="uk-overflow-auto">
                                     <table class="uk-table uk-table-justify uk-table-divider">
                                         <thead>
-                                            <tr>
-                                                <th class="uk-table-shrink">Courses ID</th>
-                                                <th class="uk-table-shrink">Credit</th>
-                                                <th>Courses Name</th>
-                                                <th class="uk-width-small">Section</th>
-                                                <th class="uk-width-small">Day</th>
-                                                <th class="uk-width-small">Time</th>
-                                                <th class="uk-width-small">Remove Courses</th>
-                                            </tr>
+                                          <tr>
+                                              <th class="uk-width-auto uk-table-middle uk-text-center" rowspan="2">#</th>
+                                              <th class="uk-width-auto uk-table-middle uk-text-center" rowspan="2">ID</th>
+                                              <th class="uk-width-1-3 uk-table-middle uk-text-center" rowspan="2">Courses Name</th>
+                                              <th class="uk-width-auto uk-table-middle uk-text-center" rowspan="2">Section</th>
+                                              <th class="uk-width-auto uk-table-middle uk-text-center" colspan="2">Credit</th>
+                                              <th class="uk-width-auto uk-table-middle uk-text-center" rowspan="2">Day</th>
+                                              <th class="uk-width-auto uk-table-middle uk-text-center" rowspan="2">Time</th>
+                                                <th class="uk-width-auto uk-table-middle uk-text-center" rowspan="2">Type</th>
+
+                                              <th class="uk-width-auto uk-table-middle uk-text-center" rowspan="2">Remove Courses</th>
+                                          </tr>
+                                          <tr>
+                                              <th class="uk-width-auto uk-table-middle uk-text-center">lec</th>
+                                              <th class="uk-width-auto uk-table-middle uk-text-center">lab</th>
+                                          </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>204100</td>
-                                                <td>1</td>
-                                                <td>IT AND MODERN LIFE</td>
-                                                <td>701</td>
-                                                <td>Friday</td>
-                                                <td>12.30 - 14.30</td>
-                                                <td><button class="uk-button uk-button-danger" type="button">Remove</button></td>
+                                              <td class="uk-text-center">1</td>
+                                              <td class="uk-text-center">204100</td>
+                                              <td class="uk-text-left">IT AND MODERN LIFE</td>
+                                              <td class="uk-text-center">701</td>
+                                              <td class="uk-text-center">2</td>
+                                              <td class="uk-text-center">1</td>
+                                              <td class="uk-text-center">Friday</td>
+
+                                          <td class="uk-text-center">12.30-14.30</td>
+                                          <td class="uk-text-center">p</td>
+                                                  <td class="uk-text-center"><button class="uk-button uk-button-danger" type="button">Remove</button></td>
                                             </tr>
 
                                             <tr>
-                                                <td>953411</td>
-                                                <td>1</td>
-                                                <td>AI FOR SE</td>
-                                                <td>701</td>
-                                                <td>TBA</td>
-                                                <td>00.00 - 00.00</td>
-                                                <td><button class="uk-button uk-button-danger" type="button">Remove</button></td>
+                                              <td class="uk-text-center">2</td>
+                                              <td class="uk-text-center">953411</td>
+                                              <td class="uk-text-left">AI FOR SE</td>
+                                              <td class="uk-text-center">701</td>
+                                              <td class="uk-text-center">2</td>
+                                              <td class="uk-text-center">1</td>
+                                              <td class="uk-text-center">TBA</td>
+                                              <td class="uk-text-center">00.00 - 00.00</td>
+                                              <td class="uk-text-center">p</td>
+                                                <td class="uk-text-center"><button class="uk-button uk-button-danger" type="button">Remove</button></td>
                                             </tr>
 
                                             <tr>
-                                                <td>953392</td>
-                                                <td>1</td>
-                                                <td>SOFTWARE ENGINEERING PREPROJECT</td>
-                                                <td>701</td>
-                                                <td>Monday</td>
-                                                <td>08.00 - 09.00</td>
-                                                <td><button class="uk-button uk-button-danger" type="button">Remove</button></td>
+
+                                                <td class="uk-text-center">3</td>
+                                                <td class="uk-text-center">953392</td>
+                                                <td class="uk-text-left">SOFTWARE ENGINEERING PREPROJECT</td>
+                                                <td class="uk-text-center">701</td>
+                                                <td class="uk-text-center">0</td>
+                                                <td class="uk-text-center">1</td>
+                                                <td class="uk-text-center">Monday</td>
+                                                <td class="uk-text-center">08.00 - 09.00</td>
+                                                <td class="uk-text-center">p</td>
+                                                  <td class="uk-text-center"><button class="uk-button uk-button-danger" type="button">Remove</button></td>
                                             </tr>
                                         </tbody>
                                     </table>
