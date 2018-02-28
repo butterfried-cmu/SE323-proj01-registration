@@ -4,11 +4,15 @@ html, body{
     margin: 0px;
 }
 
+footer{
+    color: #ffffff;
+    height: 120px;
+    margin-top: 30px;
+    background-color: #533B75;
+}
+
 .container {
     min-height: 100%;
-
-    /* Equal to height of footer */
-    /* But also accounting for potential margin-bottom of last child */
     margin-bottom: -150px;
 }
 
@@ -16,11 +20,8 @@ html, body{
     height: 150px;
 }
 
-footer{
-    color: #ffffff;
-    height: 120px;
-    margin-top: 30px;
-    background-color: #533B75;
+.image-user{
+    max-height: 250px;
 }
 
 .header{
@@ -99,6 +100,17 @@ footer{
     margin-left: auto;
     margin-right: auto;
     vertical-align: middle;
+}
+
+.uk-table th {
+  padding: 3px 3px;
+  text-align: left;
+  vertical-align: bottom;
+  /* 1 */
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: #999;
+  text-transform: uppercase;
 }
 
 .uk-light .uk-input:focus,

@@ -18,31 +18,25 @@
     </head>
     <body>
 
-        <div id="main">
+        <div class="container">
 
-            <!-- The navigation menu will get the value of the "active" variable as a class. -->
-            <!-- To stops the page from jumping when a link is clicked we use the "prevent" modifier (short for preventDefault). -->
-
-            <div class="container">
-
-                <div class="header">
-                    <h3>Registration System</h3>
-                </div>
-
-                <nav v-bind:class="active" class="uk-navbar-container" uk-navbar uk-sticky="bottom: #offset; show-on-up: true; animation: uk-animation-slide-top;">
-                    <div class="uk-navbar-left">
-                        <ul class="uk-navbar-nav">
-                            <li><a href="/" class="home"><span class="uk-icon" uk-icon="icon: home"></span>Home</a></li>
-                            <li><a href="courses  " class="home">Courses</a></li>
-                        </ul>
-                    </div>
-                    <div class="uk-navbar-right">
-                        <ul class="uk-navbar-nav">
-                            <li><a class="login" type="button" uk-toggle="target: #offcanvas-slide"><span class="uk-icon" uk-icon="icon: sign-in"></span>Login</a></li>
-                        </ul>
-                    </div>
-                </nav>
+            <div class="header">
+                <h3>Registration System</h3>
             </div>
+
+            <nav v-bind:class="active" class="uk-navbar-container" uk-navbar uk-sticky="bottom: #offset; show-on-up: true; animation: uk-animation-slide-top;">
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="/" class="home"><span class="uk-icon" uk-icon="icon: home"></span>Home</a></li>
+                        <li><a href="courses  " class="home">Courses</a></li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li><a class="login" type="button" uk-toggle="target: #offcanvas-slide"><span class="uk-icon" uk-icon="icon: sign-in"></span>Login</a></li>
+                    </ul>
+                </div>
+            </nav>
 
             <div class="uk-container">
                 <div class="content box">
@@ -59,6 +53,7 @@
                                     <tr>
                                         <th align="left">Course</th>
                                         <th>Credits</th>
+                                        <td></td>
                                         <th>GPA</th>
                                     </tr>
                                 </thead>
@@ -66,31 +61,34 @@
                                     <tr>
                                         <td>001223 - ENGL FOR HUMAN & MASSCOM</td>
                                         <td align="center">3 credits</td>
+                                        <td></td>
                                         <td align="center">A</td>
                                     </tr>
                                     <tr>
                                         <td>951100 - MODERN LIFE AND ANIMATION </td>
                                         <td align="center">3 credits</td>
+                                        <td></td>
                                         <td align="center">A</td>
                                     </tr>
                                     <tr>
                                         <td>953323 - SOFWARE CONS TEST&MAINT </td>
                                         <td align="center">3 credits</td>
+                                        <td></td>
                                         <td align="center">A</td>
                                     </tr>
                                     <tr>
                                         <td>953411 - AI FOR SE </td>
                                         <td align="center">3 credits</td>
+                                        <td></td>
                                         <td align="center">A</td>
                                     </tr>
                                     <tr>
                                         <td>953422 - SOFTWARE QUALITY ASSURANCE </td>
                                         <td align="center">3 credits</td>
+                                        <td></td>
                                         <td align="center">A</td>
                                     </tr>
-
                                 </tbody>
-
                                 <tfoot>
                                     <tr>
                                         <th align="right">Total Credits</th>
@@ -100,7 +98,6 @@
                                     </tr>
                                 </tfoot>
                             </table>
-
                             <div id="offcanvas-slide" uk-offcanvas="overlay: true; flip: true">
                                 <div class="uk-offcanvas-bar">
 
@@ -123,7 +120,7 @@
             <div class="push"></div>
         </div>
         <footer>
-        footer
+            footer
         </footer>
     </body>
 </html>
