@@ -26,13 +26,15 @@
             <nav v-bind:class="active" class="uk-navbar-container" uk-navbar uk-sticky="bottom: #offset; show-on-up: true; animation: uk-animation-slide-top;">
                 <div class="uk-navbar-left">
                     <ul class="uk-navbar-nav">
-                        <li><a href="/" class="home"><span class="uk-icon" uk-icon="icon: home"></span>Home</a></li>
-                        <li><a href="courses  " class="home">Courses</a></li>
+                        <li><a href="index_s.html" class="home"><span class="uk-icon" uk-icon="icon: home"></span>Home</a></li>
+                        <li><a href="courses_s.html" class="courses">Courses</a></li>
+                        <li><a href="fee.html" class="fee">Tuition Fee</a></li>
+                        <li><a href="gpa.html" class="gpa">GPA</a></li>
                     </ul>
                 </div>
                 <div class="uk-navbar-right">
                     <ul class="uk-navbar-nav">
-                        <li><a class="login" type="button" uk-toggle="target: #offcanvas-slide"><span class="uk-icon" uk-icon="icon: sign-in"></span>Login</a></li>
+                        <li><a href="index.html"><span class="uk-icon" uk-icon="icon: sign-out"></span>Logout</a></li>
                     </ul>
                 </div>
             </nav>
@@ -41,62 +43,69 @@
                 <div class="content box">
                     <form>
                         <fieldset class="uk-fieldset">
-
                             <legend class="uk-legend">Tution Fee</legend>
                             <div class="uk-margin">
-                                <p>Name : Momonka Sama</p>
+                                <p>Name : Surasung Vunlai</p>
 
                             </div>
-                            <table style="width: 100%">
-                                <thead>
-                                    <tr>
-                                        <th align="left">Course</th>
-                                        <th>Credits</th>
-                                        <th>Fee</th>
-                                    </tr>
-                                </thead>
+                            <div class="uk-overflow-auto">
+                                <table style="width: 100%">
+                                    <thead>
+                                        <tr>
+                                            <th align="left">Course</th>
+                                            <th>Credits</th>
+                                            <td></td>
+                                            <th>Fee</th>
+                                        </tr>
+                                    </thead>
 
-                                <tbody>
-                                    <tr>
-                                        <td>001223 - ENGL FOR HUMAN & MASSCOM</td>
-                                        <td align="center">3 credits</td>
-                                        <td align="center">60</td>
-                                    </tr>
-                                    <tr>
-                                        <td>951100 - MODERN LIFE AND ANIMATION </td>
-                                        <td align="center">3 credits</td>
-                                        <td align="center">60</td>
-                                    </tr>
-                                    <tr>
-                                        <td>953323 - SOFWARE CONS TEST&MAINT </td>
-                                        <td align="center">3 credits</td>
-                                        <td align="center">60</td>
-                                    </tr>
-                                    <tr>
-                                        <td>953411 - AI FOR SE </td>
-                                        <td align="center">3 credits</td>
-                                        <td align="center">60</td>
-                                    </tr>
-                                    <tr>
-                                        <td>953422 - SOFTWARE QUALITY ASSURANCE </td>
-                                        <td align="center">3 credits</td>
-                                        <td align="center">60</td>
-                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <td>001223 - ENGL FOR HUMAN & MASSCOM</td>
+                                            <td align="center">3 credits</td>
+                                            <td></td>
+                                            <td align="center">60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>951100 - MODERN LIFE AND ANIMATION </td>
+                                            <td align="center">3 credits</td>
+                                            <td></td>
+                                            <td align="center">60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>953323 - SOFWARE CONS TEST&MAINT </td>
+                                            <td align="center">3 credits</td>
+                                            <td></td>
+                                            <td align="center">60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>953411 - AI FOR SE </td>
+                                            <td align="center">3 credits</td>
+                                            <td></td>
+                                            <td align="center">60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>953422 - SOFTWARE QUALITY ASSURANCE </td>
+                                            <td align="center">3 credits</td>
+                                            <td></td>
+                                            <td align="center">60</td>
+                                        </tr>
 
-                                </tbody>
+                                    </tbody>
 
-                                <tfoot>
+                                    <tfoot>
 
-                                    <tr>
+                                        <tr>
 
-                                        <th align="right">Total Credits</th>
-                                        <td align="center">15</td>
-                                        <th align="left">Total Fee</th>
-                                        <td align="left">300 Baht</td>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                            <p>*Each credits is cost by 20 Baht.</p>
+                                            <th align="right">Total Credits</th>
+                                            <td align="center">15</td>
+                                            <th align="left">Total Fee</th>
+                                            <td align="center">300 Baht</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <p align="right">*Each credits is cost by 20 Baht.</p>
 
 
                             <div id="offcanvas-slide" uk-offcanvas="overlay: true; flip: true">

@@ -17,32 +17,27 @@
 
     </head>
     <body>
+        <div class="container">
 
-        <div id="main">
-
-            <!-- The navigation menu will get the value of the "active" variable as a class. -->
-            <!-- To stops the page from jumping when a link is clicked we use the "prevent" modifier (short for preventDefault). -->
-
-            <div class="container">
-
-                <div class="header">
-                    <h3>Registration System</h3>
-                </div>
-
-                <nav v-bind:class="active" class="uk-navbar-container" uk-navbar uk-sticky="bottom: #offset; show-on-up: true; animation: uk-animation-slide-top;">
-                    <div class="uk-navbar-left">
-                        <ul class="uk-navbar-nav">
-                            <li><a href="index.html" class="home"><span class="uk-icon" uk-icon="icon: home"></span>Home</a></li>
-                            <li><a href="courses.html" class="home">Courses</a></li>
-                        </ul>
-                    </div>
-                    <div class="uk-navbar-right">
-                        <ul class="uk-navbar-nav">
-                            <li><a href="index.html"><span class="uk-icon" uk-icon="icon: sign-out"></span>Logout</a></li>
-                        </ul>
-                    </div>
-                </nav>
+            <div class="header">
+                <h3>Registration System</h3>
             </div>
+
+            <nav v-bind:class="active" class="uk-navbar-container" uk-navbar uk-sticky="bottom: #offset; show-on-up: true; animation: uk-animation-slide-top;">
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="index_s.html" class="home"><span class="uk-icon" uk-icon="icon: home"></span>Home</a></li>
+                        <li><a href="courses_s.html" class="courses">Courses</a></li>
+                        <li><a href="fee.html" class="fee">Tuition Fee</a></li>
+                        <li><a href="gpa.html" class="gpa">GPA</a></li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="index.html"><span class="uk-icon" uk-icon="icon: sign-out"></span>Logout</a></li>
+                    </ul>
+                </div>
+            </nav>
 
             <div class="uk-container">
 
@@ -53,40 +48,106 @@
                 <div class="content box">
                     <ul uk-accordion="multiple: true">
                         <li>
-                            <a class="uk-accordion-title" href="#">Courses</a>
+                            <a class="uk-accordion-title" href="#">012200 - MIND VOLUNTEER (3 Section)</a>
                             <div class="uk-accordion-content">
-                                <p>Course description here</p>
+                                <div class="uk-overflow-auto">
+                                    <table class="uk-table uk-table-justify uk-table-divider uk-table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th class="uk-width-auto uk-table-middle uk-text-center" rowspan="2">Section</th>
+                                                <th class="uk-width-1-3 uk-table-middle uk-text-center" rowspan="2">Teacher</th>
+                                                <th class="uk-width-auto uk-table-middle uk-text-center" colspan="2">Credit</th>
+                                                <th class="uk-width-auto uk-table-middle uk-text-center" rowspan="2">Day</th>
+                                                <th class="uk-width-auto uk-table-middle uk-text-center" rowspan="2">Time</th>
+                                                <th class="uk-width-auto uk-table-middle uk-text-center" rowspan="2">Room</th>
+                                                <th class="uk-width-auto uk-table-middle uk-text-center" rowspan="2">Seat</th>
+                                                <th class="uk-width-auto uk-table-middle uk-text-center" rowspan="2">Enroll</th>
+                                                <th class="uk-width-auto uk-table-middle uk-text-center" rowspan="2">Add</th>
+                                            </tr>
+                                            <tr>
+                                                <th class="uk-width-auto uk-table-middle uk-text-center">lec</th>
+                                                <th class="uk-width-auto uk-table-middle uk-text-center">lab</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="uk-text-center">001</td>
+                                                <td class="uk-text-center">Rapee Sangsakorn</td>
+                                                <td class="uk-text-center">3</td>
+                                                <td class="uk-text-center">0</td>
+                                                <td class="uk-text-center">TuF</td>
+                                                <td class="uk-text-center">12.30-15.30</td> 
+                                                <td class="uk-text-center">AKB4801</td> 
+                                                <td class="uk-text-center">35</td>
+                                                <td class="uk-text-center"><span class="uk-label">35</span></td>
+                                                <td class="uk-text-center"><button class="uk-button uk-button-disable" type="button">Add</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="uk-text-center">002</td>
+                                                <td class="uk-text-center">Rapee Sangsakorn</td>
+                                                <td class="uk-text-center">3</td>
+                                                <td class="uk-text-center">0</td>
+                                                <td class="uk-text-center">MoTh</td>
+                                                <td class="uk-text-center">09.00-12.00</td>
+                                                <td class="uk-text-center">BNK4802</td> 
+                                                <td class="uk-text-center">35</td>
+                                                <td class="uk-text-center"><span class="uk-label">28</span></td>
+                                                <td class="uk-text-center"><button class="uk-button add" type="button">Add</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="uk-text-center">701</td>
+                                                <td class="uk-text-center">Rapee Sangsakorn<br>Staff</td>
+                                                <td class="uk-text-center">3</td>
+                                                <td class="uk-text-center">0</td>
+                                                <td class="uk-text-center">MoTh</td>
+                                                <td class="uk-text-center">12.30-15.30</td>
+                                                <td class="uk-text-center">RB5204</td> 
+                                                <td class="uk-text-center">35</td>
+                                                <td class="uk-text-center"><span class="uk-label">16</span></td>
+                                                <td class="uk-text-center"><button class="uk-button add" type="button">Add</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </li>
                         <li>
-                            <a class="uk-accordion-title" href="#">Courses</a>
+                            <a class="uk-accordion-title" href="#">951100 - MODERN LIFE AND ANIMATION (1 Section)</a>
                             <div class="uk-accordion-content">
-                                <p>Course description here</p>
+                                <p>** Table for course's section **</p>
                             </div>
                         </li>
                         <li>
-                            <a class="uk-accordion-title" href="#">Courses</a>
+                            <a class="uk-accordion-title" href="#">953323 - SOFWARE CONS TEST&MAINT (1 Section)</a>
                             <div class="uk-accordion-content">
-                                <p>Course description here</p>
+                                <p>** Table for course's section **</p>
                             </div>
                         </li>
                         <li>
-                            <a class="uk-accordion-title" href="#">Courses</a>
+                            <a class="uk-accordion-title" href="#">953411 - AI FOR SE (1 Section)</a>
                             <div class="uk-accordion-content">
-                                <p>Course description here</p>
+                                <p>** Table for course's section **</p>
                             </div>
                         </li>
                         <li>
-                            <a class="uk-accordion-title" href="#">Courses</a>
+                            <a class="uk-accordion-title" href="#">953422 - SOFTWARE QUALITY ASSURANCE (1 Section)</a>
                             <div class="uk-accordion-content">
-                                <p>Course description here</p>
+                                <p>** Table for course's section **</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="uk-accordion-title" href="#">954420 - E-COMMERCE (1 Section)</a>
+                            <div class="uk-accordion-content">
+                                <p>** Table for course's section **</p>
                             </div>
                         </li>
                     </ul>
                 </div>
-
-                <!-- UIkit JS -->
-                <script src="{{ asset('js/uikit.min.js') }}"></script>
-                <script src="{{ asset('js/uikit-icons.min.js') }}"></script>
-                </body>
-            </html>
+            </div>
+            <div class="push"></div>
+        </div>
+        <footer>
+            footer
+        </footer>
+    </body>
+</html>

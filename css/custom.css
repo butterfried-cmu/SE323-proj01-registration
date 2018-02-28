@@ -38,6 +38,11 @@ footer{
     border-radius: 30%;
 }
 
+.uk-button.add, .uk-button.student{
+    background-color: #b053b2;
+    color: #ffffff;
+}
+
 .uk-navbar-container:not(.uk-navbar-transparent) {
     background-color: #533B75;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
