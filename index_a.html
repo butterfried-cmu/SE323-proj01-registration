@@ -42,7 +42,10 @@
                         <li class="uk-open">
                             <a class="uk-accordion-title" href="#">Add Course</a>
                             <div class="uk-accordion-content">
-                                <form name="createCourse" action="courses_added.html">
+                                <form name="createCourse" onsubmit="alert('Success...course created.')">
+
+                                <!-- This one is not working ! -->
+                                <!-- <form name="createCourse" onsubmit="UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Success'})"> -->
                                     <fieldset class="uk-fieldset" >
                                         <div class="uk-margin">
                                             <input class="uk-input" type="text" placeholder="Course Name" name="courseName" required>
