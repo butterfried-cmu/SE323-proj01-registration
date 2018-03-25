@@ -11,6 +11,10 @@ footer{
     background-color: #533B75;
 }
 
+.hidden {
+    display: none;
+}
+
 .container {
     min-height: 100%;
     margin-bottom: -150px;
